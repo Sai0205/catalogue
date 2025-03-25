@@ -1,5 +1,5 @@
 pipeline {
-    agent { node {label 'sonarqube'} }
+    agent { node { label 'sonarqube'} }
 
     stages{
         stage('Build'){
@@ -8,6 +8,7 @@ pipeline {
                 sh '''
                     pwd
                     ls -la
+                    echo "hi"
                 '''
             }
         }
