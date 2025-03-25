@@ -1,9 +1,6 @@
 pipeline {
     agent { node { label 'sonarqube'} }
 
-     options {
-        skipDefaultCheckout()  // Disables automatic git checkout
-    }
 
     stages{
         stage('Build'){
