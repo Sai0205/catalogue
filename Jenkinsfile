@@ -32,7 +32,7 @@ pipeline {
                 '''
             }
         }
-        stage('scan'){
+        stage('sonarscan'){
             steps{
                 sh 'sonar-scanner'
             }
