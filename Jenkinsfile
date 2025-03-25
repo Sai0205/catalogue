@@ -9,7 +9,7 @@ pipeline {
         stage('Checkout'){
             steps{
                 echo 'Checking out the code...'
-                git 'https://github.com/saikiranpi/Mastering-Docker.git'
+                git branch: 'main', url: 'https://github.com/saikiranpi/Mastering-Docker.git'
             }
         }
         stage('Build'){
