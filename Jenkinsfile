@@ -1,5 +1,5 @@
 pipeline {
-    agent { node {label 'sonarqube'}}
+    agent { node {label 'sonarcli'} }
 
     //  options {
     //     skipDefaultCheckout()  // Disables automatic git checkout
