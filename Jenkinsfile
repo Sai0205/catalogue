@@ -33,6 +33,12 @@ pipeline {
         }
 
     }
+    post {
+        always {
+            cleanWs()  // Cleans the workspace after execution
+            echo 'Workspace cleaned up!'
+        }
+    }
 }
 
 
