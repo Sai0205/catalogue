@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent {node {label 'sonarscan'}}
 
     //  options {
     //     skipDefaultCheckout()  // Disables automatic git checkout
