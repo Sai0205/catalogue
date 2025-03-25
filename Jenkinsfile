@@ -6,7 +6,6 @@ pipeline {
                 echo 'Building the project...'
                 sh '''
                     pwd
-                    ls
                 '''
             }
         }
