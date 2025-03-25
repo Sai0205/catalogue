@@ -27,6 +27,7 @@ pipeline {
                     ls -la
                     pwd
                     whoami
+                    ls -la
                 '''
             }
         }
