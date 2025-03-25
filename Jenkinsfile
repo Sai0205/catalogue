@@ -14,6 +14,7 @@ pipeline {
         // }
         stage('Build'){
             steps{
+                sh 'whoami'
                 echo 'Building the project...'
                 sh 'npm install'
             }
