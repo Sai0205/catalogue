@@ -1,10 +1,17 @@
 pipeline {
     agent { node {label 'sonarscan'} }
-
-    stage( sonarscan){
-        steps{
-            sh "echo 'Building the project..."
+    stages{
+        stage('Build'){
+            steps{
+                echo 'Building the project...'
+                sh '''
+                    pwd
+                    ls
+                '''
+            }
         }
+
     }
+
 }
 
