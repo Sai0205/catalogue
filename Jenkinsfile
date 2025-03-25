@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { node {label 'sonarqube'}}
 
     //  options {
     //     skipDefaultCheckout()  // Disables automatic git checkout
@@ -12,6 +12,12 @@ pipeline {
         //         git branch: 'main', url: 'https://github.com/saikiranpi/Mastering-Docker.git'
         //     }
         // }
+        stage('Build'){
+            steps{
+                echo 'Building the project...'
+                sh 'npm install
+            }
+        }
         stage('Build'){
             steps{
                 echo 'Building the project...'
