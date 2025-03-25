@@ -11,6 +11,7 @@ pipeline {
                 echo 'Building the project...'
                 sh '''
                     ls -la
+                    echo "Hello"
                 '''
             }
         }
