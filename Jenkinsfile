@@ -18,7 +18,7 @@ pipeline {
                 sh 'npm install'
             }
         }
-        stage('Build'){
+        stage('scan'){
             steps{
                 echo 'Building the project...'
                 sh '''
