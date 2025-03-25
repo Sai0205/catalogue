@@ -12,14 +12,14 @@ pipeline {
         //         git branch: 'main', url: 'https://github.com/saikiranpi/Mastering-Docker.git'
         //     }
         // }
-        stage('Build'){
-            steps{
-                sh 'whoami'
-                sh 'ls'
-                echo 'Building the project...'
-                sh 'npm install'
-            }
-        }
+        // stage('Build'){
+        //     steps{
+        //         sh 'whoami'
+        //         sh 'ls'
+        //         echo 'Building the project...'
+        //         sh 'npm install'
+        //     }
+        // }
         stage('scan'){
             steps{
                 echo 'Building the project...'
