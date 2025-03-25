@@ -16,7 +16,6 @@ pipeline {
             steps{
                 echo 'Building the project...'
                 sh '''
-                    pwd
                     ls -la
                 '''
             }
