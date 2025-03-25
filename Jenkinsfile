@@ -18,7 +18,6 @@ pipeline {
                 sh '''
                     pwd
                     ls -la
-                    echo "hi"
                 '''
             }
         }
