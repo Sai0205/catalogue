@@ -32,6 +32,11 @@ pipeline {
                 '''
             }
         }
+        stage('scan'){
+            steps{
+                sh 'sonar-scanner'
+            }
+        }
 
     }
     post {
