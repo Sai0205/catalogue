@@ -48,6 +48,7 @@ pipeline {
             cleanWs()  // Cleans the workspace after execution
             echo 'Workspace cleaned up!'
         }
+    }
     
 }
 
