@@ -35,6 +35,7 @@ pipeline {
         stage('sonarscan'){
             steps{
                 sh 'sonar-scanner'
+                sh 'ls'
             }
         }
 
