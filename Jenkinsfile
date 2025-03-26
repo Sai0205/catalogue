@@ -36,6 +36,7 @@ pipeline {
             steps{
                 sh 'sonar-scanner'
                 sh 'ls'
+                sh 'pwd'
             }
         }
 
