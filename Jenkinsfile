@@ -38,6 +38,7 @@ pipeline {
                 sh 'sonar-scanner -Dsonar.exclusions=**/node_modules/**'
                 sh 'ls'
                 sh 'pwd'
+                sh 'whoami'
             }
         }
 
