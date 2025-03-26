@@ -35,7 +35,7 @@ pipeline {
         stage('sonarscan'){
             steps{
                 sh 'sudo su'
-                sh 'sonar-scanner -Dsonar.exclusions=**/node_modules/**'
+                sh 'sonar-scanner'
                 sh 'ls'
                 sh 'pwd'
                 sh 'whoami'
