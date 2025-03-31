@@ -41,6 +41,18 @@ pipeline {
                 sh 'whoami'
             }
         }
+        stage('qualtygate'){
+            steps{
+                echo 'Building the project...'
+                sh '''
+                    ls -la
+                    pwd
+                    echo "Hello "
+                    whoami
+                    ls -la
+                '''
+            }
+        }
 
     }
     post {
